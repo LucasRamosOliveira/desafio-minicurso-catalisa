@@ -39,47 +39,17 @@ main > section button{
     text-transform: uppercase;
 }
 
-#detalhes_container_1 {
+ul {
     font-weight: bold;
     list-style-type: none;
     width: 90%;
 }
 
-#detalhes_container_1 > li{
+ul > li{
     align-items: baseline;
     display: flex;
 }
 
-#detalhes_container_1 > li p{
-    color: white;
-}
-
-#detalhes_container_2 {
-    font-weight: bold;
-    list-style-type: none;
-    width: 90%;
-}
-
-#detalhes_container_2 > li{
-    align-items: baseline;
-    display: flex;
-}
-
-#detalhes_container_2 > li p{
-    color: white;
-}
-
-#detalhes_container_3 {
-    font-weight: bold;
-    list-style-type: none;
-    width: 90%;
-}
-
-#detalhes_container_3 > li{
-    align-items: baseline;
-    display: flex;
-}
-
-#detalhes_container_3 > li p{
+ul > li p{
     color: white;
 }
