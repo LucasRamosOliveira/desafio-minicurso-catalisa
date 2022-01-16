@@ -29,6 +29,7 @@ main > section button{
     border: none;
     border-radius: 4px;
     color: white;
+    cursor: pointer;
     font-family: EuclidBold;
     font-size: 12px;
     font-weight: 500;

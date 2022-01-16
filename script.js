@@ -1,16 +1,16 @@
-//Contantes que recebem os elementos com id reminados em 1
+//Constantes que recebem os elementos do primeiro personagem
 const imagem_1 = document.querySelector('#img_1');
 const nomeDoPersonagem_1 = document.querySelector('#nome_1');
 const especie_1 = document.querySelector('#especie_1');
 const condicao_1 = document.querySelector('#status_1');
 
-//Contantes que recebem os elementos com id reminados em 2
+//Constantes que recebem os elementos do segundo personagem
 const imagem_2 = document.querySelector('#img_2');
 const nomeDoPersonagem_2 = document.querySelector('#nome_2');
 const especie_2 = document.querySelector('#especie_2');
 const condicao_2 = document.querySelector('#status_2');
 
-//Contantes que recebem os elementos com id reminados em 3
+//Constantes que recebem os elementos do terceiro personagem
 const imagem_3 = document.querySelector('#img_3');
 const nomeDoPersonagem_3 = document.querySelector('#nome_3');
 const especie_3 = document.querySelector('#especie_3');
@@ -26,13 +26,14 @@ let numerosAleatorios = []
 gerarValorAleatorio = () => {
     let valoresAleatorios = []
     //Insere 3 numeros aleatório no array
-    for(var i = 0; i < 3; i++){
+    for(let i = 0; i < 3; i++){
         valoresAleatorios.push(Math.floor(Math.random() * 671));
     }
     return valoresAleatorios
 }
 
 
+//Função responsável por pegar o primeiro personagem
 pegarPersonagem_1 = () => {
     return fetch(`https://rickandmortyapi.com/api/character/${numerosAleatorios[0]}`, {
         method: 'GET',
@@ -49,6 +50,7 @@ pegarPersonagem_1 = () => {
     });
 }
 
+////Função responsável por pegar o segundo personagem
 pegarPersonagem_2 = () => {
     return fetch(`https://rickandmortyapi.com/api/character/${numerosAleatorios[1]}`, {
         method: 'GET',
@@ -65,6 +67,7 @@ pegarPersonagem_2 = () => {
     });
 }
 
+//Função responsável por pegar o terceiro personagem
 pegarPersonagem_3 = () => {
     return fetch(`https://rickandmortyapi.com/api/character/${numerosAleatorios[2]}`, {
         method: 'GET',
